@@ -1,7 +1,7 @@
 import { Error, Loader, SongCard } from '../components';
 import { genres } from "../assets/constants";
 import { useGetTopChartsQuery } from "../store/services/shazamCore";
-import { savedDiscoverData } from "../assets/constants";
+import { savedMusicData } from "../assets/constants";
 import { useDispatch, useSelector } from "react-redux";
 
 const Discover = () => {
@@ -9,7 +9,7 @@ const Discover = () => {
   const { activeSong, isPlaying } = useSelector((state) => state.player);
   
   const {
-    data = savedDiscoverData,
+    data = savedMusicData,
     isFetching,
     error
   } = {}//useGetTopChartsQuery();

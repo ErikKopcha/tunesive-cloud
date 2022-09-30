@@ -24,7 +24,7 @@ export const links = [
   { name: 'Top Charts', to: '/top-charts', icon: HiOutlineHashtag },
 ];
 
-export const savedDiscoverData = [
+export const savedMusicData = [
   {
     "layout": "5",
     "type": "MUSIC",
