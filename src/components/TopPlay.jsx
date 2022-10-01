@@ -27,7 +27,7 @@ const TopChartCard = ({ song, index, isPlaying, handlePlayClick, handlePauseClic
         <Link to={`/songs/${song?.key}`}>
           <p className="text-xl font-bold text-white">{song?.title}</p>
         </Link>
-        <Link to={`/atrists/${song?.artists[0]?.adamid}`}>
+        <Link to={`/artists/${song?.artists[0]?.adamid}`}>
           <p className="text-base text-gray-300 mt-1">{song?.subtitle}</p>
         </Link>
       </div>
@@ -92,7 +92,7 @@ const TopPlay = () => {
       <div className="w-full flex flex-col mt-8">
         <div className="flex flex-row justify-between items-center">
           <h2 className="text-white font-bold text-2xl">Top Artists</h2>
-          <Link to={"/top-atrists"}>
+          <Link to={"/top-artists"}>
             <p className="text-gray-300 text-base cursor-pointer">See more</p>
           </Link>
         </div>
